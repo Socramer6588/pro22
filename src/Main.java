@@ -1,14 +1,51 @@
 import java.util.Scanner;
 
+import static java.lang.Math.random;
+
 public class Main {
 
-    public static void main(String[] args) {
-        String num;
-        Scanner sc = new Scanner(System.in);
+    static Scanner sc = new Scanner(System.in);
+    static char[] arrayAbecedary = new char[26]; //Son vocales las posiciones 0/4/8/14/20
+    static int numLetters;
+    static int numRandom;
 
-        System.out.println("Introduce un número: ");
-        num = sc.next();
-        System.out.println("El número" + " introducido es: " + num);
+    public static void fillArrayAbecedary() {
+        for (int aux = 0; aux <= 25; aux++) {
+            arrayAbecedary[aux] = (char) (aux + 65);
+            //System.out.println(arrayAbecedary[aux]); //Debug Purposes
+        }
+    }
+
+    public static void entryInterface() {
+        System.out.println(" ");
+        System.out.println("Escribe un número: ");
+        numLetters = sc.nextInt();
+        System.out.println(" ");
+        System.out.println("Vamos a generar " + numLetters + " letras aleatorias y decir si son vocales o consonantes:");
+    }
+
+    public static void showSolution() {
+        for (int aux = 1; aux <= numLetters; aux++) {
+            numRandom = (int) (random() * 26);
+            //System.out.println(numRandom); //Debug Purposes
+            switch (numRandom) {
+                case 0:
+                case 4:
+                case 8:
+                case 14:
+                case 20:
+                    System.out.println(arrayAbecedary[numRandom] + " -> Es vocal");
+                    break;
+                default:
+                    System.out.println(arrayAbecedary[numRandom]+" -> Es consonante");
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        fillArrayAbecedary();
+        entryInterface();
+        showSolution();
     }
 }
 
