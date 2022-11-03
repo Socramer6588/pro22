@@ -37,7 +37,7 @@ public class Main {
                     System.out.println(arrayAbecedary[numRandom] + " -> Es vocal");
                     break;
                 default:
-                    System.out.println(arrayAbecedary[numRandom]+" -> Es consonante");
+                    System.out.println(arrayAbecedary[numRandom] + " -> Es consonante");
             }
         }
     }
