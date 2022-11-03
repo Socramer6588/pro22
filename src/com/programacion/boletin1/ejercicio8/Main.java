@@ -1,3 +1,5 @@
+package com.programacion.boletin1.ejercicio8;
+
 import java.util.Scanner;
 
 import static java.lang.Math.random;
@@ -29,15 +31,8 @@ public class Main {
             numRandom = (int) (random() * 26);
             //System.out.println(numRandom); //Debug Purposes
             switch (numRandom) {
-                case 0:
-                case 4:
-                case 8:
-                case 14:
-                case 20:
-                    System.out.println(arrayAbecedary[numRandom] + " -> Es vocal");
-                    break;
-                default:
-                    System.out.println(arrayAbecedary[numRandom] + " -> Es consonante");
+                case 0, 4, 8, 14, 20 -> System.out.println(arrayAbecedary[numRandom] + " -> Es vocal");
+                default -> System.out.println(arrayAbecedary[numRandom] + " -> Es consonante");
             }
         }
     }
