@@ -10,7 +10,6 @@ public class Main {
     static int numLetters;
     static char letterRandom;
 
-
     public static void entryInterface() {
         System.out.println(" ");
         System.out.println("Escribe un número: ");
