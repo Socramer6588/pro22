@@ -48,7 +48,6 @@ public class Main {
         System.out.println(arrayEuros[5] + " billetes de 10");
         System.out.println(arrayEuros[6] + " billetes de 5");
         System.out.println(manyEuros + " euros sueltos");
-
     }
 
     public static void main(String[] args) {
