@@ -28,6 +28,7 @@ public class Main {
     }
 
     public static void showSolution() {
+        //Bucle for tradicional
         /*
         for (int aux = 0; aux < arrayManyBills.length; aux++) {
             if (arrayManyBills[aux] > 0) {
@@ -36,6 +37,7 @@ public class Main {
         }
         */
 
+        //Bucle for each
         int auxForEach = 0;
         for (int manyBills : arrayManyBills) {
             if (manyBills > 0) {
