@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.random;
 
-public class Main {
+public class Main { //TODO Math.random
 
     static Scanner sc = new Scanner(System.in);
     static int numLetters;

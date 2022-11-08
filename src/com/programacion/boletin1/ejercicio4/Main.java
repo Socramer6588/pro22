@@ -2,15 +2,13 @@ package com.programacion.boletin1.ejercicio4;
 
 import java.util.Scanner;
 
-import static java.lang.Math.pow;
-
 public class Main { //TODO recursive solution & N Digits
 
     static Scanner sc = new Scanner(System.in);
     static int number;
-    static int numberCopyForMethods;
-    static int auxArray;
-    static int[] arraySeparateNumber = new int[3];
+    static int contFillArray;
+    static int[] arraySeparateNumber = new int[1];
+    static int[] arrayForResizeOtherArray;
     static boolean armstrong;
 
     public static void entryInterface() {
@@ -20,12 +18,18 @@ public class Main { //TODO recursive solution & N Digits
         number = sc.nextInt();
     }
 
-    public static void fillArray() {
-        arraySeparateNumber[auxArray] = numberCopyForMethods % 10;
-        numberCopyForMethods = numberCopyForMethods / 10;
-        auxArray++;
-        if (numberCopyForMethods > 0) {
-            fillArray();
+    public static void fillArray(int numberRecursive) {
+
+        arraySeparateNumber[contFillArray] = numberRecursive % 10;
+        numberRecursive = numberRecursive / 10;
+        contFillArray++;
+
+        if (numberRecursive > 0) {
+            arrayForResizeOtherArray = new int[arraySeparateNumber.length];
+            System.arraycopy(arraySeparateNumber, 0, arrayForResizeOtherArray, 0, arraySeparateNumber.length);
+            arraySeparateNumber = new int[arraySeparateNumber.length + 1];
+            System.arraycopy(arrayForResizeOtherArray, 0, arraySeparateNumber, 0, arrayForResizeOtherArray.length);
+            fillArray(numberRecursive);
         }
     }
 
@@ -34,7 +38,7 @@ public class Main { //TODO recursive solution & N Digits
     }
 
     public static void calculateArmstrong() {
-        armstrong = (pow(arraySeparateNumber[0], 3) + pow(arraySeparateNumber[1], 3) + pow(arraySeparateNumber[2], 3)) == number;
+        armstrong = number == Math.pow(arraySeparateNumber[0], 3) + Math.pow(arraySeparateNumber[1], 3) + Math.pow(arraySeparateNumber[2], 3);
     }
 
     public static void showSolution() {
@@ -47,8 +51,7 @@ public class Main { //TODO recursive solution & N Digits
 
     public static void main(String[] args) {
         entryInterface();
-        numberCopyForMethods = number;
-        fillArray();
+        fillArray(number);
         ordenateArray();
         calculateArmstrong();
         showSolution();
