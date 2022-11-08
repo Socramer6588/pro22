@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.random;
 
-public class Main { //TODO Update for to use array.lenth
+public class Main { 
 
     static Scanner sc = new Scanner(System.in);
     static char[] arrayAbecedary = new char[26]; //Son vocales las posiciones 0/4/8/14/20
@@ -12,7 +12,7 @@ public class Main { //TODO Update for to use array.lenth
     static int numRandom;
 
     public static void fillArrayAbecedary() {
-        for (int aux = 0; aux <= 25; aux++) {
+        for (int aux = 0; aux < arrayAbecedary.length; aux++) {
             arrayAbecedary[aux] = (char) (aux + 65);
             //System.out.println(arrayAbecedary[aux]); //Debug Purposes
         }
