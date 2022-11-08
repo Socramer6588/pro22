@@ -6,9 +6,8 @@ public class Main { //TODO recursive solution & N Digits
 
     static Scanner sc = new Scanner(System.in);
     static int number;
-    static int contFillArray;
-    static int[] arraySeparateNumber = new int[1];
-    static int[] arrayForResizeOtherArray;
+    static int[] separateNumber = new int[1];
+    static int[] forOtherArray;
     static boolean armstrong;
 
     public static void entryInterface() {
@@ -19,26 +18,68 @@ public class Main { //TODO recursive solution & N Digits
     }
 
     public static void fillArray(int numberRecursive) {
-
-        arraySeparateNumber[contFillArray] = numberRecursive % 10;
+        separateNumber[separateNumber.length - 1] = numberRecursive % 10;
         numberRecursive = numberRecursive / 10;
-        contFillArray++;
 
         if (numberRecursive > 0) {
-            arrayForResizeOtherArray = new int[arraySeparateNumber.length];
-            System.arraycopy(arraySeparateNumber, 0, arrayForResizeOtherArray, 0, arraySeparateNumber.length);
-            arraySeparateNumber = new int[arraySeparateNumber.length + 1];
-            System.arraycopy(arrayForResizeOtherArray, 0, arraySeparateNumber, 0, arrayForResizeOtherArray.length);
+            forOtherArray = separateNumber;
+            separateNumber = new int[separateNumber.length + 1];
+            System.arraycopy(forOtherArray, 0, separateNumber, 0, forOtherArray.length);
             fillArray(numberRecursive);
         }
     }
 
     public static void ordenateArray() {
 
+        for (int i : separateNumber) {
+            System.out.print(i);
+        }
+        System.out.println("");
+        for (int i : forOtherArray) {
+            System.out.print(i);
+        }
+        System.out.println("");
+
+
+
+
+
+        forOtherArray = separateNumber;
+        //forOtherArray = new int[forOtherArray.length + 1];
+        //System.arraycopy(separateNumber, 0, forOtherArray, 0, separateNumber.length);
+
+        for (int i : separateNumber) {
+            System.out.print(i);
+        }
+        System.out.println("");
+        for (int i : forOtherArray) {
+            System.out.print(i);
+        }
+        System.out.println("");
+
+
+
+        for (int aux = 0; aux < separateNumber.length; aux++) {
+            int aux2 = forOtherArray.length - (aux + 1);
+            separateNumber[aux] = forOtherArray[aux2];
+        }
+
+
+
+
+        for (int i : separateNumber) {
+            System.out.print(i);
+        }
+        System.out.println("");
+        for (int i : forOtherArray) {
+            System.out.print(i);
+        }
+        System.out.println("");
+
     }
 
     public static void calculateArmstrong() {
-        armstrong = number == Math.pow(arraySeparateNumber[0], 3) + Math.pow(arraySeparateNumber[1], 3) + Math.pow(arraySeparateNumber[2], 3);
+        armstrong = number == Math.pow(separateNumber[0], 3) + Math.pow(separateNumber[1], 3) + Math.pow(separateNumber[2], 3);
     }
 
     public static void showSolution() {
