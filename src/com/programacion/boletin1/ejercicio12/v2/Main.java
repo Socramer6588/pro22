@@ -21,6 +21,7 @@ public class Main {
         for (int aux = 0; aux < arrayBills.length; aux++) {
             if (manyEuros >= arrayBills[aux]) {
                 arrayManyBills[aux] = manyEuros / arrayBills[aux];
+                //arrayManyBills[aux] = (int) Math.floor(manyEuros / arrayBills[aux]); //Another solution
                 manyEuros = manyEuros - (arrayBills[aux] * arrayManyBills[aux]);
             }
         }
