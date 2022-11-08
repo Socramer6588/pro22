@@ -1,4 +1,4 @@
-package com.programacion.boletin1.ejercicio8.V1;
+package com.programacion.boletin1.ejercicio8.v1;
 
 import java.util.Scanner;
 
