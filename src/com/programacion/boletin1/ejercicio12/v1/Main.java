@@ -6,7 +6,7 @@ public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static int manyEuros;
-    static int[] arrayEuros = new int[7];
+    static int[] arrayManyBills = new int[7];
 
     public static void entryInterface() {
         System.out.println(" ");
@@ -17,36 +17,36 @@ public class Main {
     }
 
     public static void calculateEuros() {
-        arrayEuros[0] = manyEuros / 500;
-        manyEuros = manyEuros - arrayEuros[0] * 500;
+        arrayManyBills[0] = manyEuros / 500;
+        manyEuros = manyEuros - (arrayManyBills[0] * 500);
 
-        arrayEuros[1] = manyEuros / 200;
-        manyEuros = manyEuros - arrayEuros[1] * 200;
+        arrayManyBills[1] = manyEuros / 200;
+        manyEuros = manyEuros - (arrayManyBills[1] * 200);
 
-        arrayEuros[2] = manyEuros / 100;
-        manyEuros = manyEuros - arrayEuros[2] * 100;
+        arrayManyBills[2] = manyEuros / 100;
+        manyEuros = manyEuros - (arrayManyBills[2] * 100);
 
-        arrayEuros[3] = manyEuros / 50;
-        manyEuros = manyEuros - arrayEuros[3] * 50;
+        arrayManyBills[3] = manyEuros / 50;
+        manyEuros = manyEuros - (arrayManyBills[3] * 50);
 
-        arrayEuros[4] = manyEuros / 20;
-        manyEuros = manyEuros - arrayEuros[4] * 20;
+        arrayManyBills[4] = manyEuros / 20;
+        manyEuros = manyEuros - (arrayManyBills[4] * 20);
 
-        arrayEuros[5] = manyEuros / 10;
-        manyEuros = manyEuros - arrayEuros[5] * 10;
+        arrayManyBills[5] = manyEuros / 10;
+        manyEuros = manyEuros - (arrayManyBills[5] * 10);
 
-        arrayEuros[6] = manyEuros / 5;
-        manyEuros = manyEuros - arrayEuros[6] * 5;
+        arrayManyBills[6] = manyEuros / 5;
+        manyEuros = manyEuros - (arrayManyBills[6] * 5);
     }
 
     public static void showSolution() {
-        System.out.println(arrayEuros[0] + " billetes de 500");
-        System.out.println(arrayEuros[1] + " billetes de 200");
-        System.out.println(arrayEuros[2] + " billetes de 100");
-        System.out.println(arrayEuros[3] + " billetes de 50");
-        System.out.println(arrayEuros[4] + " billetes de 20");
-        System.out.println(arrayEuros[5] + " billetes de 10");
-        System.out.println(arrayEuros[6] + " billetes de 5");
+        System.out.println(arrayManyBills[0] + " billetes de 500");
+        System.out.println(arrayManyBills[1] + " billetes de 200");
+        System.out.println(arrayManyBills[2] + " billetes de 100");
+        System.out.println(arrayManyBills[3] + " billetes de 50");
+        System.out.println(arrayManyBills[4] + " billetes de 20");
+        System.out.println(arrayManyBills[5] + " billetes de 10");
+        System.out.println(arrayManyBills[6] + " billetes de 5");
         System.out.println(manyEuros + " euros sueltos");
     }
 
