@@ -1,22 +1,12 @@
 package com.programacion.boletin1.ejercicio4;
 
-import java.util.Scanner;
+public class Main { //TODO new minimalist version
 
-public class Main { //TODO recursive solution & N Digits
-
-    static Scanner sc = new Scanner(System.in);
     static int number;
-    static int sumaArmstrong;
+    static int sumArmstrong;
     static int[] separateNumber = new int[1];
     static int[] forOtherArray;
     static boolean armstrong;
-
-    public static void entryInterface() {
-        System.out.println(" ");
-        System.out.println("Escribe un número y vamos a comprobar si es un número Armstrong: ");
-        System.out.println("Ej: 153 = 1^3 + 5^3 + 3^3");
-        number = sc.nextInt();
-    }
 
     public static void fillArray(int numberRecursive) {
         separateNumber[separateNumber.length - 1] = numberRecursive % 10;
@@ -42,22 +32,36 @@ public class Main { //TODO recursive solution & N Digits
 
     public static void calculateArmstrong() {
         for (int value : separateNumber) {
-            sumaArmstrong = (int) (sumaArmstrong + Math.pow(value, separateNumber.length));
+            sumArmstrong = (int) (sumArmstrong + Math.pow(value, separateNumber.length));
         }
-        armstrong = number == sumaArmstrong;
+        armstrong = number == sumArmstrong;
     }
 
     public static void showSolution() {
         if (armstrong) {
-            System.out.println(number + " Es un número Armstrong");
+            System.out.print("Es un número Armstrong: ");
+
+            for (int value : separateNumber) {
+                System.out.print(value);
+            }
+            System.out.println();
         }
     }
 
+    public static void loop() {
+        number++;
+        sumArmstrong = 0;
+        separateNumber = new int[1];
+    }
+
     public static void main(String[] args) {
-        entryInterface();
-        fillArray(number);
-        ordenateArray();
-        calculateArmstrong();
-        showSolution();
+
+        while (number < 1000000000) {
+            fillArray(number);
+            ordenateArray();
+            calculateArmstrong();
+            showSolution();
+            loop();
+        }
     }
 }
