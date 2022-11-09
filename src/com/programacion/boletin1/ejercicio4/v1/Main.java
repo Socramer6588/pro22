@@ -1,4 +1,4 @@
-package com.programacion.boletin1.ejercicio4;
+package com.programacion.boletin1.ejercicio4.v1;
 
 public class Main { //TODO new minimalist version
 
