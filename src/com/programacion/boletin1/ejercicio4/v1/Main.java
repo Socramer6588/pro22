@@ -1,6 +1,6 @@
 package com.programacion.boletin1.ejercicio4.v1;
 
-public class Main { //TODO new minimalist version
+public class Main {
 
     static int number;
     static int sumArmstrong;
