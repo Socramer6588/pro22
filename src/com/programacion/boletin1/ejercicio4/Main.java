@@ -6,6 +6,7 @@ public class Main { //TODO recursive solution & N Digits
 
     static Scanner sc = new Scanner(System.in);
     static int number;
+    static int sumaArmstrong;
     static int[] separateNumber = new int[1];
     static int[] forOtherArray;
     static boolean armstrong;
@@ -30,63 +31,25 @@ public class Main { //TODO recursive solution & N Digits
     }
 
     public static void ordenateArray() {
-
-        for (int i : separateNumber) {
-            System.out.print(i);
-        }
-        System.out.println("");
-        for (int i : forOtherArray) {
-            System.out.print(i);
-        }
-        System.out.println("");
-
-
-
-
-
-        forOtherArray = separateNumber;
-        //forOtherArray = new int[forOtherArray.length + 1];
-        //System.arraycopy(separateNumber, 0, forOtherArray, 0, separateNumber.length);
-
-        for (int i : separateNumber) {
-            System.out.print(i);
-        }
-        System.out.println("");
-        for (int i : forOtherArray) {
-            System.out.print(i);
-        }
-        System.out.println("");
-
-
+        forOtherArray = new int[separateNumber.length];
+        System.arraycopy(separateNumber, 0, forOtherArray, 0, separateNumber.length);
 
         for (int aux = 0; aux < separateNumber.length; aux++) {
-            int aux2 = forOtherArray.length - (aux + 1);
+            int aux2 = separateNumber.length - (aux + 1);
             separateNumber[aux] = forOtherArray[aux2];
         }
-
-
-
-
-        for (int i : separateNumber) {
-            System.out.print(i);
-        }
-        System.out.println("");
-        for (int i : forOtherArray) {
-            System.out.print(i);
-        }
-        System.out.println("");
-
     }
 
     public static void calculateArmstrong() {
-        armstrong = number == Math.pow(separateNumber[0], 3) + Math.pow(separateNumber[1], 3) + Math.pow(separateNumber[2], 3);
+        for (int value : separateNumber) {
+            sumaArmstrong = (int) (sumaArmstrong + Math.pow(value, separateNumber.length));
+        }
+        armstrong = number == sumaArmstrong;
     }
 
     public static void showSolution() {
         if (armstrong) {
-            System.out.println("Es un número Armstrong");
-        } else {
-            System.out.println("No es un número Armstrong");
+            System.out.println(number + " Es un número Armstrong");
         }
     }
 
