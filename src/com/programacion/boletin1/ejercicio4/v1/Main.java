@@ -56,7 +56,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        while (number < 1000000000) {
+        while (number < 1E9) {
             fillArray(number);
             ordenateArray();
             calculateArmstrong();
