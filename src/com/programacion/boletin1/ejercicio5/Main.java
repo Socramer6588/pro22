@@ -6,10 +6,10 @@ public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static String birthDate;
-    static int sumRecursive;
     static int luckyNumber;
     static int[] arrayBirthDate = new int[3];
-    static String[] arrayForOtherArray;
+    static int[] forOtherArray;
+    static String[] arrayString;
 
     public static void entryInterface() {
         System.out.println(" ");
@@ -18,16 +18,35 @@ public class Main {
         System.out.println();
     }
 
-    public static void separateDateBirth() {
-        arrayForOtherArray = birthDate.split("-");
+    public static void separateBirthDate() {
+        arrayString = birthDate.split("-");
 
-        for (int aux = 0; aux < arrayForOtherArray.length; aux++) {
-            arrayBirthDate[aux] = Integer.parseInt(arrayForOtherArray[aux]);
+        for (int aux = 0; aux < arrayString.length; aux++) {
+            arrayBirthDate[aux] = Integer.parseInt(arrayString[aux]);
         }
     }
 
-    public static void sumDateBirth() {
+    public static void sumBirthDate() {
+        for (int aux : arrayBirthDate) {
+            luckyNumber = luckyNumber + aux;
+        }
 
+        if (luckyNumber > 9) {
+            arrayBirthDate = new int[1];
+
+            while (luckyNumber > 0) {
+                arrayBirthDate[arrayBirthDate.length - 1] = luckyNumber % 10;
+                luckyNumber = luckyNumber / 10;
+
+                if (luckyNumber > 0) {
+                    forOtherArray = arrayBirthDate;
+                    arrayBirthDate = new int[arrayBirthDate.length + 1];
+                    System.arraycopy(forOtherArray, 0, arrayBirthDate, 0, forOtherArray.length);
+                }
+            }
+
+            sumBirthDate();
+        }
     }
 
     public static void showSolution() {
@@ -36,15 +55,8 @@ public class Main {
 
     public static void main(String[] args) {
         entryInterface();
-        separateDateBirth();
-        sumDateBirth();
+        separateBirthDate();
+        sumBirthDate();
         showSolution();
-
-        System.out.println(birthDate);
-
-        for (int aux: arrayBirthDate) {
-            System.out.println(aux);
-        }
-
     }
 }
