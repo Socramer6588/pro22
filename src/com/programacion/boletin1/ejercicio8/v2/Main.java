@@ -2,9 +2,7 @@ package com.programacion.boletin1.ejercicio8.v2;
 
 import java.util.Scanner;
 
-import static java.lang.Math.random;
-
-public class Main { //TODO Math.random
+public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static int numLetters;
@@ -20,7 +18,7 @@ public class Main { //TODO Math.random
 
     public static void showSolution() {
         for (int aux = 1; aux <= numLetters; aux++) {
-            letterRandom = (char) (random() * 26 + 65);
+            letterRandom = (char) (Math.random() * 26 + 65);
             switch (letterRandom) {
                 case 'A', 'E', 'I', 'O', 'U' -> System.out.println(letterRandom + " -> Es vocal");
                 default -> System.out.println(letterRandom + " -> Es consonante");

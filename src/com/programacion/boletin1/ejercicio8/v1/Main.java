@@ -2,9 +2,7 @@ package com.programacion.boletin1.ejercicio8.v1;
 
 import java.util.Scanner;
 
-import static java.lang.Math.random;
-
-public class Main { //TODO Math.random
+public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static char[] arrayAbecedary = new char[26]; //Son vocales las posiciones 0/4/8/14/20
@@ -28,7 +26,7 @@ public class Main { //TODO Math.random
 
     public static void showSolution() {
         for (int aux = 1; aux <= numLetters; aux++) {
-            numRandom = (int) (random() * 26);
+            numRandom = (int) (Math.random() * 26);
             //System.out.println(numRandom); //Debug Purposes
             switch (numRandom) {
                 case 0, 4, 8, 14, 20 -> System.out.println(arrayAbecedary[numRandom] + " -> Es vocal");
