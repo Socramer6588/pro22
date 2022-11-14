@@ -16,7 +16,7 @@ public class Main {
         for (int aux = 0; aux < arrayNum.length; aux++) {
             int contador = 0;
 
-            for (int i = 1; i <= arrayNum[i]; i++) {
+            for (int i = 1; i <= arrayNum[aux]; i++) {
                 if (arrayNum[aux] % i == 0) {
                     contador++;
                 }
