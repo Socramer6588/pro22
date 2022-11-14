@@ -5,8 +5,9 @@ import java.util.Scanner;
 public class Main {
 
     static Scanner sc = new Scanner(System.in);
-    static int numMedia;
+    static double numMedia;
     static int numNegative;
+    static int numSupMedia;
     static int[] arrayNum;
 
     public static void entryInterface() {
@@ -48,8 +49,11 @@ public class Main {
         for (int aux : arrayNum) {
             if (aux > numMedia) {
                 System.out.print(aux + " ");
+                numSupMedia++;
             }
         }
+        System.out.println();
+        System.out.println("Cantidad de números superiores a la media: " + numSupMedia);
     }
 
     public static void main(String[] args) {
