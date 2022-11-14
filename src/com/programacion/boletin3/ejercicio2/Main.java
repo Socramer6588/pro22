@@ -1,18 +1,18 @@
 package com.programacion.boletin3.ejercicio2;
 
-public class Main { //TODO Change languaje
+public class Main {
 
-    static boolean primo;
+    static boolean prime;
     static int[] arrayNum = new int[30];
-    static int[] arrayPrimo = new int[30];
+    static int[] arrayPrime = new int[30];
 
-    public static void llenarArray() {
+    public static void fillArray() {
         for (int aux = 0; aux < arrayNum.length; aux++) {
             arrayNum[aux] = (int) (Math.random() * 100);
         }
     }
 
-    public static void encontrarPrimo() {
+    public static void findPrime() {
         for (int aux = 0; aux < arrayNum.length; aux++) {
             int contador = 0;
 
@@ -22,23 +22,22 @@ public class Main { //TODO Change languaje
                 }
             }
 
-            primo = contador == 2;
+            prime = contador == 2;
 
-            if (primo) {
-                arrayPrimo[aux] = arrayNum[aux];
+            if (prime) {
+                arrayPrime[aux] = arrayNum[aux];
             }
-
         }
     }
 
-    public static void mostrarResultado() {
+    public static void showResult() {
         for (int num : arrayNum) {
             System.out.print(num + " ");
         }
 
         System.out.println();
 
-        for (int num : arrayPrimo) {
+        for (int num : arrayPrime) {
             if (num != 0) {
                 System.out.print(num + " ");
             }
@@ -46,8 +45,8 @@ public class Main { //TODO Change languaje
     }
 
     public static void main(String[] args) {
-        llenarArray();
-        encontrarPrimo();
-        mostrarResultado();
+        fillArray();
+        findPrime();
+        showResult();
     }
 }
