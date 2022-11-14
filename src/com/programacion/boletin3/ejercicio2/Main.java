@@ -1,6 +1,6 @@
-package com.programacion.invenciones_de_nuria.ejercicio2;
+package com.programacion.boletin3.ejercicio2;
 
-public class Main {
+public class Main { //TODO Change languaje
 
     static boolean primo;
     static int[] arrayNum = new int[30];

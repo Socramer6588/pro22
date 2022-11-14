@@ -1,4 +1,4 @@
-package com.programacion.invenciones_de_nuria.ejercicio1;
+package com.programacion.boletin3.ejercicio1;
 
 import java.util.Scanner;
 
