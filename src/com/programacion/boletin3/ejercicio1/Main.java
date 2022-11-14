@@ -13,8 +13,12 @@ public class Main {
         System.out.println("Introduce la longitud del array");
         arrayNum = new int[sc.nextInt()];
         for (int aux = 0; aux < arrayNum.length; aux++) {
-            System.out.println("Introduce el número de la posición " + (aux + 1));
+            System.out.println("Introduce el número de la posición " + aux);
             arrayNum[aux] = sc.nextInt();
+            while (arrayNum[aux] < 0) {
+                System.out.println("Prueba otra vez:");
+                arrayNum[aux] = sc.nextInt();
+            }
         }
     }
 
@@ -32,13 +36,20 @@ public class Main {
     }
 
     public static void showSolution() {
+        System.out.println("Elementos: ");
         for (int aux : arrayNum) {
             System.out.print(aux + " ");
         }
         System.out.println();
 
         System.out.println("Media: " + numMedia);
-        System.out.println("Números negativos: " + numNegative);
+        System.out.println("Cantidad de números negativos: " + numNegative);
+        System.out.print("Números superiores a la media: ");
+        for (int aux : arrayNum) {
+            if (aux > numMedia) {
+                System.out.print(aux + " ");
+            }
+        }
     }
 
     public static void main(String[] args) {
