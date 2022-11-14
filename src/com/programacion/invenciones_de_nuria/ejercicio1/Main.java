@@ -32,9 +32,15 @@ public class Main {
     }
 
     public static void mostrarResultado() {
+        for (int num : arrayNum) {
+                System.out.print(num + " ");
+        }
+
+        System.out.println();
+
         for (int num : arrayPrimo) {
             if (num != 0) {
-                System.out.println(num);
+                System.out.print(num + " ");
             }
         }
     }
