@@ -33,7 +33,7 @@ public class Main {
 
     public static void mostrarResultado() {
         for (int num : arrayNum) {
-                System.out.print(num + " ");
+            System.out.print(num + " ");
         }
 
         System.out.println();
