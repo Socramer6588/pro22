@@ -14,15 +14,15 @@ public class Main {
 
     public static void findPrime() {
         for (int aux = 0; aux < arrayNum.length; aux++) {
-            int contador = 0;
+            int cont = 0;
 
             for (int i = 1; i <= arrayNum[aux]; i++) {
                 if (arrayNum[aux] % i == 0) {
-                    contador++;
+                    cont++;
                 }
             }
 
-            prime = contador == 2;
+            prime = cont == 2;
 
             if (prime) {
                 arrayPrime[aux] = arrayNum[aux];
