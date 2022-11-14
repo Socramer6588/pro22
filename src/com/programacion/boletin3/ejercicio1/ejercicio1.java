@@ -1,3 +1,5 @@
+package com.programacion.boletin3.ejercicio1;
+
 import java.util.Scanner;
 
 /**
