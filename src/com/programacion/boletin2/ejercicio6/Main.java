@@ -1,6 +1,6 @@
 package com.programacion.boletin2.ejercicio6;
 
-public class Main { //TODO ask for other solution
+public class Main {
 
     public static void showSolution() {
         for (int aux = 1; aux <= 10; aux++) {
