@@ -1,8 +1,8 @@
-package com.programacion.boletin1.ejercicio4.v1;
+package com.programacion.boletin1.ejercicio4;
 
 public class Main {
 
-    static int number;
+    public static int number;
     static int sumArmstrong;
     static int[] separateNumber = new int[1];
     static int[] forOtherArray;
@@ -20,16 +20,6 @@ public class Main {
         }
     }
 
-    public static void ordenateArray() {
-        forOtherArray = new int[separateNumber.length];
-        System.arraycopy(separateNumber, 0, forOtherArray, 0, separateNumber.length);
-
-        for (int aux = 0; aux < separateNumber.length; aux++) {
-            int aux2 = separateNumber.length - (aux + 1);
-            separateNumber[aux] = forOtherArray[aux2];
-        }
-    }
-
     public static void calculateArmstrong() {
         for (int value : separateNumber) {
             sumArmstrong = (int) (sumArmstrong + Math.pow(value, separateNumber.length));
@@ -38,14 +28,7 @@ public class Main {
     }
 
     public static void showSolution() {
-        if (armstrong) {
-            System.out.print("Es un número Armstrong: ");
-
-            for (int value : separateNumber) {
-                System.out.print(value);
-            }
-            System.out.println();
-        }
+        if (armstrong) System.out.println("Es un número Armstrong: " + number);
     }
 
     public static void loop() {
@@ -55,10 +38,8 @@ public class Main {
     }
 
     public static void main(String[] args) {
-
         while (number < 1E9) {
             fillArray(number);
-            ordenateArray();
             calculateArmstrong();
             showSolution();
             loop();

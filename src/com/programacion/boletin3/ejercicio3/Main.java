@@ -1,6 +1,6 @@
-package com.programacion.boletin3.ejercicio3.v2;
+package com.programacion.boletin3.ejercicio3;
 
-public class Main { //TODO V1 without recursion
+public class Main { //TODO finish code with new update
 
     static int loopRecursive;
     static int sumNumbers;

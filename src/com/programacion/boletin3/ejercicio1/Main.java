@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 public class Main {
 
+    public static int[] arrayNum;
     static Scanner sc = new Scanner(System.in);
     static double numMedia;
     static int numNegative;
     static int numSupMedia;
-    static int[] arrayNum;
 
     public static void entryInterface() {
         System.out.println("Introduce la longitud del array");

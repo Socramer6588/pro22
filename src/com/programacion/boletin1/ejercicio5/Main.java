@@ -44,7 +44,6 @@ public class Main {
                     System.arraycopy(forOtherArray, 0, arrayBirthDate, 0, forOtherArray.length);
                 }
             }
-
             sumBirthDate();
         }
     }

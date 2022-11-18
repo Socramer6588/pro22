@@ -1,4 +1,4 @@
-package com.programacion.boletin1.ejercicio12.v2;
+package com.programacion.boletin1.ejercicio12;
 
 import java.util.Scanner;
 
@@ -21,23 +21,12 @@ public class Main {
         for (int aux = 0; aux < arrayBills.length; aux++) {
             if (manyEuros >= arrayBills[aux]) {
                 arrayManyBills[aux] = manyEuros / arrayBills[aux];
-                //arrayManyBills[aux] = (int) Math.floor(manyEuros / arrayBills[aux]); //Another solution
                 manyEuros = manyEuros - (arrayBills[aux] * arrayManyBills[aux]);
             }
         }
     }
 
     public static void showSolution() {
-        //Bucle for tradicional
-        /*
-        for (int aux = 0; aux < arrayManyBills.length; aux++) {
-            if (arrayManyBills[aux] > 0) {
-                System.out.println(arrayManyBills[aux] + " billetes de " + arrayBills[aux] + " euros");
-            }
-        }
-        */
-
-        //Bucle for each
         int auxForEach = 0;
         for (int manyBills : arrayManyBills) {
             if (manyBills > 0) {
