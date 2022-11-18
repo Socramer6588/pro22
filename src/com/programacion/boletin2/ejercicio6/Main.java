@@ -1,8 +1,8 @@
 package com.programacion.boletin2.ejercicio6;
 
-public class Main {
+public class Main { //TODO ask for other solution
 
-    private static void showSolution() {
+    public static void showSolution() {
         for (int aux = 1; aux <= 10; aux++) {
             System.out.println();
             System.out.println("Tabla del " + aux);
