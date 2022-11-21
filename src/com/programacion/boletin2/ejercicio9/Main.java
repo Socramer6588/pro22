@@ -9,13 +9,13 @@ public class Main {
     static int[] forOtherArray;
 
     public static void findPrime(int numSP) {
-        int contador = 0;
+        int cont = 0;
         for (int aux = 1; aux <= numSP; aux++) {
             if (numSP % aux == 0) {
-                contador++;
+                cont++;
             }
         }
-        prime = contador == 2;
+        prime = cont == 2;
     }
 
     public static void separateNum(int numSP) {
