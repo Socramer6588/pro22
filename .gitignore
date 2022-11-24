@@ -1,5 +1,7 @@
-# Carpeta out
+# Due to the existence of .dia files in /src folder that are also created in /out
 /out
+
+# Default Java .gitignore from Github:
 
 # Compiled class file
 *.class
