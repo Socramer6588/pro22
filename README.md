@@ -1,3 +1,3 @@
-# ejercicios-java DAM 22/23 :)
+# Programación 1º DAM. Curso 22-23.
 
-![Imagen Presentación](./img/Varios.jpg)
+![Imagen de Presentación](./img/Presentacion.png)
