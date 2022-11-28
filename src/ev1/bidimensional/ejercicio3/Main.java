@@ -4,6 +4,7 @@ public class Main {
 
     static int loopRecursive;
     static int sumNumbers;
+    static int sumNumbersTotal;
     static int[][] arrayNum = new int[4][5];
 
     public static void fillArray() {
@@ -35,7 +36,7 @@ public class Main {
             int number = arrayNum[loopRecursive][aux];
             sumNumbers = sumNumbers + number;
             if (number < 10) System.out.print(" ");
-            System.out.print(number + " ");
+            System.out.print(number + "  ");
             if ((aux + 1) != arrayNum[loopRecursive].length) System.out.print("+ ");
             else System.out.print("= " + sumNumbers);
         }
@@ -45,13 +46,17 @@ public class Main {
     }
 
     public static void sumColumns() {
-        sumNumbers = 0;
+        sumNumbers=0;
+        System.out.println(" =     =     =     =     =     =");
         for (int aux = 0; aux < arrayNum[0].length; aux++) {
+            sumNumbers = 0;
             for (int i = 0; i < arrayNum.length; i++) {
                 sumNumbers = sumNumbers + arrayNum[i][aux];
             }
+            sumNumbersTotal = sumNumbersTotal + sumNumbers;
+            System.out.print(sumNumbers + " ");
             if ((aux + 1) != arrayNum[0].length) System.out.print("+ ");
-            else System.out.print("= " + sumNumbers);
+            else System.out.print("= " + sumNumbersTotal);
         }
     }
 
@@ -61,7 +66,6 @@ public class Main {
         showArray();
         prepareRecursion();
         sumRows();
-        prepareRecursion();
         sumColumns();
     }
 }
