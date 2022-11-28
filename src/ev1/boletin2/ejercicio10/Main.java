@@ -6,42 +6,6 @@ public class Main {
     static int[] arrayNum = new int[4];
     static int[][] arrayVamp = new int[12][2];
 
-    /*
-     * Número Vampiro:
-     *
-     *   1260 = 21*60
-     *
-     *   NO ambos con ceros finales
-     *   Ninguno con ceros iniciales
-     *
-     *   1260
-     *
-     *   1 2 6 0
-     *
-     *
-     *   1-2 3-4
-     *   1-2 4-3
-     *   2-1 4-3
-     *   2-1 3-4
-     *
-     *   1-3 2-4
-     *   1-3 4-2
-     *   3-1 4-2
-     *   3-1 2-4
-     *
-     *   1-4 2-3
-     *   1-4 3-2
-     *   4-1 3-2
-     *   4-1 2-3
-     *
-     *
-     *   12 60   12 06   21 60   21 06
-     *   16 20   16 02   61 20   61 02
-     *   10 26   10 62   01 26   01 62
-     *
-     *
-     */
-
     public static void separateNumber(int numSP) {
         for (int aux = 0; aux < arrayNum.length; aux++) {
             arrayNum[aux] = numSP % 10;
@@ -113,6 +77,5 @@ public class Main {
             findVamp();
             num++;
         }
-
     }
 }
