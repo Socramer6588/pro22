@@ -2,6 +2,7 @@ public class HappyNumber {
 
     public static int num;
     static boolean happy;
+    static boolean prime;
     static int auxRecursive;
     static int[] arrayNum = new int[1];
     static int[] forOtherArray;
@@ -31,21 +32,36 @@ public class HappyNumber {
         }
     }
 
+    public static void findPrime(int numSP) {
+        int cont = 0;
+        for (int aux = 1; aux <= numSP; aux++) {
+            if (numSP % aux == 0) {
+                cont++;
+            }
+        }
+        prime = cont == 2;
+    }
+
     public static void showSolution() {
-        if (happy) System.out.println("Es feliz: " + num);
+        System.out.print("Es feliz: " + num);
+        if (prime) {
+            System.out.println(" Es primo");
+        } else System.out.println();
     }
 
     public static void loop() {
-        happy = false;
         auxRecursive = 0;
         arrayNum = new int[1];
         num++;
     }
 
     public static void main(String[] args) {
-        while (num < 1E3) {
+        while (num < 1E2) {
             findHappy(num);
-            showSolution();
+            if (happy) {
+                findPrime(num);
+                showSolution();
+            }
             loop();
         }
     }
