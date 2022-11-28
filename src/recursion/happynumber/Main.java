@@ -1,6 +1,6 @@
-package recursion;
+package recursion.happynumber;
 
-public class HappyNumber {
+public class Main {
 
     public static int num;
     static boolean happy;
