@@ -50,6 +50,5 @@ public class Main { //TODO finish code with new update
         showArray();
         prepareRecursion();
         sumRows();
-
     }
 }
