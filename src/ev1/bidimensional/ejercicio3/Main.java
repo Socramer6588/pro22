@@ -50,8 +50,8 @@ public class Main {
         System.out.println(" =     =     =     =     =     =");
         for (int aux = 0; aux < arrayNum[0].length; aux++) {
             sumNumbers = 0;
-            for (int i = 0; i < arrayNum.length; i++) {
-                sumNumbers = sumNumbers + arrayNum[i][aux];
+            for (int[] num : arrayNum) {
+                sumNumbers = sumNumbers + num[aux];
             }
             sumNumbersTotal = sumNumbersTotal + sumNumbers;
             System.out.print(sumNumbers + " ");
