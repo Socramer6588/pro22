@@ -1,6 +1,6 @@
 package ev1.bidimensional.ejercicio3;
 
-public class Main { //TODO finish code with new update
+public class Main {
 
     static int loopRecursive;
     static int sumNumbers;
@@ -44,11 +44,24 @@ public class Main { //TODO finish code with new update
         if (loopRecursive < arrayNum.length) sumRows();
     }
 
+    public static void sumColumns() {
+        sumNumbers = 0;
+        for (int aux = 0; aux < arrayNum[0].length; aux++) {
+            for (int i = 0; i < arrayNum.length; i++) {
+                sumNumbers = sumNumbers + arrayNum[i][aux];
+            }
+            if ((aux + 1) != arrayNum[0].length) System.out.print("+ ");
+            else System.out.print("= " + sumNumbers);
+        }
+    }
+
     public static void main(String[] args) {
         fillArray();
         prepareRecursion();
         showArray();
         prepareRecursion();
         sumRows();
+        prepareRecursion();
+        sumColumns();
     }
 }
