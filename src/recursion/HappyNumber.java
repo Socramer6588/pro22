@@ -1,3 +1,5 @@
+package recursion;
+
 public class HappyNumber {
 
     public static int num;
