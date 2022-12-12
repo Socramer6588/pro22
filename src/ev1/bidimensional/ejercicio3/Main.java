@@ -46,7 +46,7 @@ public class Main {
     }
 
     public static void sumColumns() {
-        sumNumbers=0;
+        sumNumbers = 0;
         System.out.println(" =     =     =     =     =     =");
         for (int aux = 0; aux < arrayNum[0].length; aux++) {
             sumNumbers = 0;
