@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class Main {
 
-    static Scanner sc = new Scanner(System.in);
     public static int[][] matrix = new int[4][4];
+    static Scanner sc = new Scanner(System.in);
 
     public static void fillMatrix() {
         for (int i = 0; i < matrix.length; i++) {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.println("Introduce la posición " + "[" + i + "]" + "[" + j + "]");
-                matrix[i][j] = (int) (Math.random() * 100 + 1);// TODO: 14/12/2022 Update with requirements
+                matrix[i][j] = sc.nextInt();
             }
         }
         System.out.println();
@@ -45,25 +45,56 @@ public class Main {
     }
 
     public static void sumMajorDiagonal() {
-
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            sum = sum + matrix[i][i];
+        }
+        System.out.println("La suma de la diagonal mayor es: " + sum);
+        System.out.println();
     }
 
     public static void sumMinorDiagonal() {
-
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            sum = sum + matrix[i][matrix.length - 1 - i];
+        }
+        System.out.println("La suma de la diagonal menor es: " + sum);
+        System.out.println();
     }
 
     public static void mediaMatrix() {
-
+        int cont = 0;
+        float sum = 0;
+        for (int[] row : matrix) {
+            for (int num : row) {
+                sum = sum + num;
+                cont++;
+            }
+        }
+        System.out.println("La media de la matriz es: " + sum / cont);
+        System.out.println();
     }
 
     public static int[][] randomMatrix() {
-        int[][] auxMatrix=new int[4][4];
-
-        return auxMatrix;
+        int[][] arrayRandomMatrix = new int[4][4];
+        for (int i = 0; i < arrayRandomMatrix.length; i++) {
+            for (int j = 0; j < arrayRandomMatrix[i].length; j++) {
+                arrayRandomMatrix[i][j] = (int) (Math.random() * 10 + 1);
+                if (arrayRandomMatrix[i][j] < 10) System.out.print(" ");
+                System.out.print(arrayRandomMatrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        return arrayRandomMatrix;
     }
 
-    public static int[][] sumMatrix(int[][] randomMatrix) {
-
+    public static int[][] sumMatrix(int[][] arrayRandomMatrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                matrix[i][j] += arrayRandomMatrix[i][j];
+            }
+        }
         return matrix;
     }
 
