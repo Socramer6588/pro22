@@ -33,7 +33,7 @@ public class Main {
         int row;
         System.out.println("Introduce un número de fila:");
         row = sc.nextInt();
-        while (row < 0 || row > 3) {
+        while (row < 0 || row > matrix.length-1) {
             System.out.println("Introduce un número de fila válido:");
             row = sc.nextInt();
         }
