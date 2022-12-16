@@ -2,7 +2,7 @@ package ev1.bidimensional.ejercicio5;
 
 import java.util.Scanner;
 
-public class Main { // TODO: 15/12/2022 try .forEach
+public class Main {
 
     static Scanner sc = new Scanner(System.in);
     static int[][] matrixA;
