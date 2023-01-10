@@ -1,4 +1,4 @@
-package ev1.bidimensional.ejercicio5;
+package ev1.boletin3.ejercicio5;
 
 import java.util.Scanner;
 

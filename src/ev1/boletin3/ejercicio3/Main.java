@@ -1,4 +1,4 @@
-package ev1.bidimensional.ejercicio3;
+package ev1.boletin3.ejercicio3;
 
 public class Main {
 
