@@ -1,4 +1,4 @@
-package ev2.uml.ejercicio1;
+package ev2.boletin1.ejercicio1;
 
 public class Jugador {
 
