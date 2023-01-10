@@ -1,4 +1,4 @@
-package recursion.happynumber;
+package madness.happynumber;
 
 public class Main {
 
