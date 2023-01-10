@@ -7,16 +7,16 @@ public class Converter {
         this.number = number;
     }
 
+    public Integer getNumber() {
+        return number;
+    }
+
     public String getNumber(char format) {
-        if (format == 66 || format == 72 || format == 79) {
-            if (format == 'B') {
-                return Integer.toBinaryString(number);
-            } else if (format == 'H') {
-                return Integer.toHexString(number);
-            } else if (format == 'O') {
-                return Integer.toOctalString(number);
-            }
-        }
-        return "manco";
+        return switch (format) {
+            case 'B' -> Integer.toBinaryString(number);
+            case 'H' -> Integer.toHexString(number);
+            case 'O' -> Integer.toOctalString(number);
+            default -> "Error";
+        };
     }
 }
