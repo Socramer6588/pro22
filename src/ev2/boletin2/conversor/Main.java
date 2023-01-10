@@ -1,4 +1,4 @@
-package ev2.uml.conversor;
+package ev2.boletin2.conversor;
 
 public class Main {
     public static void main(String[] args) {
