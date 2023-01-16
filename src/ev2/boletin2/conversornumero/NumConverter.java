@@ -1,9 +1,9 @@
-package ev2.boletin2.conversor;
+package ev2.boletin2.conversornumero;
 
-public class Converter {
+public class NumConverter {
     private final Integer number;
 
-    public Converter(Integer number) {
+    public NumConverter(Integer number) {
         this.number = number;
     }
 
