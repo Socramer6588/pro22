@@ -1,4 +1,4 @@
-package ev2.boletin3.pez;
+package ev2.boletin2.pez;
 
 public class Shark extends Fish {
 
