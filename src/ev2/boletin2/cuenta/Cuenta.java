@@ -30,7 +30,7 @@ public class Cuenta { // TODO: 24/01/2023 return salto de linea
 
     @Override
     public String toString() {
-        return "Titular: " + titular + " Cantidad: " + cantidad;
+        return "Titular: " + titular + "\n" + "Cantidad: " + cantidad + "\n";
     }
 
     public void ingresar(Double cantidad) {
