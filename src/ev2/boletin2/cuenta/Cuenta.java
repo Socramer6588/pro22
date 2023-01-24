@@ -44,7 +44,7 @@ public class Cuenta { // TODO: 24/01/2023 return salto de linea
         if (this.cantidad < 0) {
             System.out.print("Se han solicitado " + cantidad + "€ ");
             cantidad = cantidad + this.cantidad;
-            System.out.println("pero el máximo a retirar quedando la cuenta a cero será: " + cantidad + "€");
+            System.out.println("pero el máximo a retirar quedando la cuenta a cero será: " + cantidad + "€\n");
             this.cantidad = 0.0;
         }
         return cantidad;
