@@ -35,6 +35,13 @@ public final class Utility {
         return array;
     }
 
+    public static int[] shrinkArrayFromTheLeft(int[] array) {
+        int[] forOtherArray = new int[array.length - 1];
+        System.arraycopy(array, 1, forOtherArray, 0, forOtherArray.length);
+        array = forOtherArray;
+        return array;
+    }
+
     public static int[] inverseArray(int[] array) {
         int[] forOtherArray = new int[array.length];
         for (int aux = 0; aux < array.length; aux++) {
@@ -43,15 +50,27 @@ public final class Utility {
         return forOtherArray;
     }
 
-    public static int[] fromNumToArray(int num) { // TODO: 07/02/2023 ordenate array & find happy & left shrink
+    public static int[] fromNumToArray(int num) {
         int[] array = new int[1];
         while (true) {
-            array[array.length - 1] = num % 10;
+            array[0] = num % 10;
             num = num / 10;
             if (num > 0) array = expandArrayToTheRight(array);
             else return inverseArray(array);
         }
     }
 
+/*    public static boolean findHappy(int num) {
+        separateNum(num);
+        num = 0;
+        for (int aux : arrayNum) {
+            num = (int) (num + Math.pow(aux, 2));
+        }
+        auxRecursive++;
+        if (auxRecursive < 8 && num != 1) {
+            arrayNum = new int[1];
+            findHappy(num);
+        } else happy = num == 1;
+    }*/
 
 }

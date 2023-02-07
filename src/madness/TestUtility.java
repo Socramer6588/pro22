@@ -12,6 +12,11 @@ public class TestUtility {
 
         int[] array = fromNumToArray(a);
 
+        for (int num : array) {
+            System.out.print(num);
+        }
+        System.out.println();
+
         array = expandArrayToTheRight(array);
 
         for (int num : array) {
@@ -32,5 +37,19 @@ public class TestUtility {
             System.out.print(num);
         }
         System.out.println();
-    }
+
+        array = shrinkArrayFromTheLeft(array);
+
+        for (int num : array) {
+            System.out.print(num);
+        }
+        System.out.println();
+
+        array = inverseArray(array);
+
+        for (int num : array) {
+            System.out.print(num);
+        }
+        System.out.println();
+        }
 }
