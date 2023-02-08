@@ -51,5 +51,7 @@ public class TestUtility {
             System.out.print(num);
         }
         System.out.println();
-        }
+
+        System.out.println(findHappy(70));
+    }
 }
