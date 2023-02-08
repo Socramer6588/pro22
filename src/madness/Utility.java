@@ -58,7 +58,7 @@ public final class Utility {
     }
 
     public static boolean findHappy(int num) {
-        for (int aux = 0; aux < 8 && num != 1; aux++) {
+        while (num != 4 && num != 1) {
             int[] array = fromNumToArray(num);
             num = 0;
             for (int auxNum : array) {
