@@ -52,6 +52,6 @@ public class TestUtility {
         }
         System.out.println();
 
-        System.out.println(findHappy(71));
+        System.out.println(findHappy(1945));
     }
 }
