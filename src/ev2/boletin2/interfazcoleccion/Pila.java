@@ -1,4 +1,4 @@
-package ev2.boletin2.interfazcoleccion;
+/*package ev2.boletin2.interfazcoleccion;
 
 public class Pila implements CollectionInterface{
 
@@ -10,4 +10,4 @@ public class Pila implements CollectionInterface{
     public boolean isEmpty() {
         return contador == 0;
     }
-}
+}*/
