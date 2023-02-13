@@ -1,4 +1,4 @@
-package ev2.boletin2.empleados;
+/*package ev2.boletin2.empleados;
 
 public class Repartidor extends Empleado {
 
@@ -21,4 +21,4 @@ public class Repartidor extends Empleado {
     public String toString() {
         return super.toString() + "Zona = " + zona;
     }
-}
+}*/
