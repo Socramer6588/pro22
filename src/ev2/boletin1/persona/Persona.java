@@ -124,10 +124,7 @@ public class Persona {
     }
 
     public boolean esMayorDeEdad() {
-        boolean mayor = false;
-        if (edad >= 18) {
-            mayor = true;
-        }
+        boolean mayor = edad >= 18;
         return mayor;
     }
 
@@ -138,13 +135,7 @@ public class Persona {
         } else {
             sexo = "mujer";
         }
-        return "Datos personales:\n"
-                + "Nombre: " + nombre + "\n"
-                + "Sexo: " + sexo + "\n"
-                + "Edad: " + edad + " años\n"
-                + "DNI: " + DNI + "\n"
-                + "Peso: " + peso + " kg\n"
-                + "Altura: " + altura + " metros\n";
+        return "Datos personales:\n" + "Nombre: " + nombre + "\n" + "Sexo: " + sexo + "\n" + "Edad: " + edad + " años\n" + "DNI: " + DNI + "\n" + "Peso: " + peso + " kg\n" + "Altura: " + altura + " metros\n";
     }
 }
 
@@ -176,7 +167,7 @@ class Principal2 {
         System.out.println("** Datos:");
         MuestraResultadoIMC(p);
         MuestraMayorDeEdad(p);
-        System.out.println(p.toString());
+        System.out.println(p);
     }
 
     public static void MuestraResultadoIMC(Persona p) {
