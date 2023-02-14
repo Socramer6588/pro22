@@ -1,6 +1,6 @@
 package madness.happynumber;
 
-public class Main {
+public class Main { // TODO: 14/02/2023 rehacer usando Utility
 
     public static int num;
     static boolean happy;
