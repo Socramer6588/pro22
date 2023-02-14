@@ -6,7 +6,7 @@ public abstract class Aeronave {
     private int autonomiaMaxima;
     private String modelo;
 
-    public Aeronave(String id, int numPasajeros,int autonomiaMaxima,String modelo){
+    public Aeronave(String id, int numPasajeros, int autonomiaMaxima, String modelo) {
         this.id = id;
         this.numPasajeros = numPasajeros;
         this.autonomiaMaxima = autonomiaMaxima;

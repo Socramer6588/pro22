@@ -6,7 +6,7 @@ public class Localizacion {
     private double latitud;
     private double longitud;
 
-    public Localizacion(String ciudad, String direccion,double latitud,double longitud){
+    public Localizacion(String ciudad, String direccion, double latitud, double longitud) {
         this.ciudad = ciudad;
         this.direccion = direccion;
         this.latitud = latitud;

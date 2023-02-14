@@ -5,7 +5,7 @@ public class Vuelo {
     private Aeropuerto destino;
     private Aeronave aeronave;
 
-    public Vuelo(Aeropuerto origen, Aeropuerto destino, Aeronave aeronave){
+    public Vuelo(Aeropuerto origen, Aeropuerto destino, Aeronave aeronave) {
         this.origen = origen;
         this.destino = destino;
         this.aeronave = aeronave;

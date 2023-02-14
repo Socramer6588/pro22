@@ -5,7 +5,7 @@ public class Aeropuerto {
     private String nombre;
     private Localizacion localizacion;
 
-    public Aeropuerto(String id, String nombre,Localizacion localizacion) {
+    public Aeropuerto(String id, String nombre, Localizacion localizacion) {
         this.id = id;
         this.nombre = nombre;
         this.localizacion = localizacion;

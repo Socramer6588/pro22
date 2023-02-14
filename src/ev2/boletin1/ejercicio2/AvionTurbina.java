@@ -1,6 +1,6 @@
 package ev2.boletin1.ejercicio2;
 
-public class AvionTurbina extends Aeronave{
+public class AvionTurbina extends Aeronave {
     private int numTurbinas;
     private int numMotores;
 
