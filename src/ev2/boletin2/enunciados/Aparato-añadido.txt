@@ -6,3 +6,9 @@ Sus atributos son kilos y secadora integrada (booleano). Por defecto, la capacid
 * Un constructor con la capacidad, secadora y el resto de atributos heredados. Recuerda que debes llamar al constructor de la clase padre.
 * Getters y Setters
 * aplicarDescuento(): si tiene una capacidad superior a 9 kilos, se incrementará el precio un 30% y si no tiene secadora integrada, se descontarán 120 €.
+
+Ahora crea una clase ejecutable que realice lo siguiente:
+
+Crea un array de Electrodomesticos de 5 posiciones.
+Ejecutar el método aplicarDescuento() para cada uno de los elementos.
+Deberás mostrar el precio de cada tipo de aparato (instanceof)
