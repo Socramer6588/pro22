@@ -1,0 +1,12 @@
+Implementar en Java la siguiente jerarquía:
+La clase Empleado contendrá la siguiente información: nombre, salario, fecha incorporación
+De la clase Empleado heredarán la clase Directivo, descendiente de la clase Empleado, contendrá, además de los atributos de su clase base, los atributos propios cargo y departamento; y la clase Operario, con su atributo propio área y nave.
+A su vez, las clases Oficial (atributo propio línea de fabricación) y Técnico (atributo propio sección), serán descendientes de la clase Operario.
+Todas las clases contendrán un método toString() para mostrar su información.
+
+En el main, crear un array de 7 elementos, que contenga empleados de todos los tipos 
+y, posteriormente mostrar su información por pantalla.
+
+SimpledateFoirmat sdf = new SimpleDateFormat("dd/MM/yyy");
+
+Date d = sdf.parse("01/01/2000")

@@ -1,0 +1,21 @@
+Se desea implementar una aplicación para gestión de Libros y Autores de una editorial.
+Deberá existir una clase Autor que incluya un campo alias y la fecha de la primera publicación del autor.
+Por otro lado, existirá una clase Persona que contenga los campos DNI, Nombre, fecha de nacimiento, nacionalidad,
+ telefono y direccion, de la cual heredará Autor.
+Por último, se debe crear una clase Libro que contenga los siguientes atributos:
+– ISBN
+
+– Titulo
+
+– Autor
+
+– Número de páginas
+
+Crear sus respectivos métodos get y set correspondientes para cada atributo. Crear el método toString()
+ para mostrar la información relativa al libro con el siguiente formato:
+
+“El libro con ISBN creado por el autor NOMBRE_AUTOR tiene X páginas”
+
+En el fichero main, crear varios objetos Libro y mostrarlos por pantalla.
+
+Por último, indicar cuál de los 2 tiene más páginas.

@@ -1,0 +1,19 @@
+public class TestCuenta {
+    public static void main(String[] args) {
+
+        Cuenta cuenta1 = new Cuenta("Luis",2500);
+        Cuenta cuenta2 = new Cuenta("Gonzalo", 1000);
+
+        //Ingresa dinero en la cuenta;
+        cuenta1.ingresar(1000);
+        cuenta2.ingresar(700);
+
+        //Retiramos dinero en la cuenta
+        cuenta1.retirar(1500);
+        cuenta2.retirar(100);
+
+        //Muestro la información de las cuentas
+        System.out.println(cuenta1);
+        System.out.println(cuenta2);
+    }
+}
