@@ -1,4 +1,4 @@
-package ev2.boletin1.ejercicio1;
+package ev2.boletin1.sintesis;
 
 public class Jugador {
 

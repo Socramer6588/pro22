@@ -1,4 +1,4 @@
-package ev2.boletin1.ejercicio2;
+package ev2.boletin1.aeronave;
 
 public class Main {
     public static void main(String[] args) {
