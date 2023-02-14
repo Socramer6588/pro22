@@ -1,4 +1,4 @@
-package ev2.boletin1.sintesis;
+package ev2.boletin1.ej1sintesis;
 
 public class Equipo {
 

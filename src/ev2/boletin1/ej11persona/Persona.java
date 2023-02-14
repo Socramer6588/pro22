@@ -1,4 +1,4 @@
-package ev2.boletin1.persona;
+package ev2.boletin1.ej11persona;
 /*
  * Clase Persona:
  * Atributos: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura.

@@ -1,4 +1,4 @@
-package ev2.boletin1.finanzas;
+package ev2.boletin1.ej3finanzas;
 
 public class Main {
 

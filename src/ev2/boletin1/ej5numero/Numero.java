@@ -1,4 +1,4 @@
-package ev2.boletin1.numero;
+package ev2.boletin1.ej5numero;
 
 /*
  *

@@ -1,4 +1,4 @@
-package ev2.boletin1.minumero;
+package ev2.boletin1.ej4minumero;
 
 /*
  * Realiza una clase minumero que proporcione el doble, triple y cuádruple de un número

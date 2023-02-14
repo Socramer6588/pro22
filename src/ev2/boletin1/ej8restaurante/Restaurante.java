@@ -1,4 +1,4 @@
-package ev2.boletin1.restaurante;
+package ev2.boletin1.ej8restaurante;
 
 /*
  * El Restaurante mexicano de Israel, cuya especialidad son las papas con chocos, nos pide diseñar un método con el que

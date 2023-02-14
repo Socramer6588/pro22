@@ -1,4 +1,4 @@
-package ev2.boletin1.aeronave;
+package ev2.boletin1.ej2aeronave;
 
 public class Vuelo {
     private Aeropuerto origen;

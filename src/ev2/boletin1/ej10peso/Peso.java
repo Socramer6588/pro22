@@ -1,4 +1,4 @@
-package ev2.boletin1.peso;
+package ev2.boletin1.ej10peso;
 
 /*
 * Crea la clase Peso, la cual tendrá las siguientes características:

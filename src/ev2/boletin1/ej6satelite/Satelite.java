@@ -1,4 +1,4 @@
-package ev2.boletin1.satelite;
+package ev2.boletin1.ej6satelite;
 
 /*
  * Clase satélite, añádele los siguientes métodos:

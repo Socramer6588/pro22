@@ -1,4 +1,4 @@
-package ev2.boletin1.consumo;
+package ev2.boletin1.ej7consumo;
 
 /*
  * Implementa una clase consumo, la cual forma parte de la centralita electrónica de un coche y tiene las siguientes características:

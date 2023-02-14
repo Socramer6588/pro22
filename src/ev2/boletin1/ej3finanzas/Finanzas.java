@@ -1,4 +1,4 @@
-package ev2.boletin1.finanzas;
+package ev2.boletin1.ej3finanzas;
 
 /*
 Realiza una clase finanzas que convierta dólares a euros y viceversa. Codifica los métodos dolaresToEuros y
