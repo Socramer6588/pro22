@@ -124,8 +124,7 @@ public class Persona {
     }
 
     public boolean esMayorDeEdad() {
-        boolean mayor = edad >= 18;
-        return mayor;
+        return edad >= 18;
     }
 
     public String toString() {
