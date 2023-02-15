@@ -1,4 +1,4 @@
-package ev2.boletin2.conversornumero;
+package ev2.boletin2.ej2conversor;
 
 public class NumConverter {
     private final Integer number;
