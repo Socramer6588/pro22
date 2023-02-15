@@ -1,4 +1,4 @@
-package ev2.boletin2.ej4Test;
+package ev2.boletin2.ej4test;
 
 /*
  * Realiza una clase Test con 2 métodos, uno que tome por teclado dos números y otro que muestre la suma,
