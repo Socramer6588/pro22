@@ -1,0 +1,53 @@
+Scanner sc = new Scanner(System.in)
+
+"\n" -> line feed
+
+Math.random()*100 -> 0 to 99
+Math.pow(5,2) -> 5^2
+Math.floor(2.99) -> 2.00
+
+String s1 = "Hola"
+s1.length -> 4
+s1.equals("Hola") -> true
+s1.charAt(3) -> "a"
+s1.substring(2) -> "la"
+s1.substring(0,3) -> "Hol"
+
+String[] a1 = s1.split("l");
+a1.length -> 2
+sout(a1[0]) -> "Ho"
+sout(a1[1]) -> "a"
+
+String s2 = "Hol#02a"
+String[] a2 = s1.split("#0[0-9]");
+a2.length -> 2
+sout(a2[0]) -> "Hol"
+sout(a2[1]) -> "a"
+
+Integer.toBinaryString(number);
+Integer.toHexString(number);
+Integer.toOctalString(number);
+
+instanceof
+
+for (ClasePadre i : arrayClasePadre){
+	if(i instanceof ClaseHijo1){
+		 ((ClaseHijo1)(i)).metodoClaseHijo1()
+	}
+	if(i instanceof ClaseHijo2){
+		 ((ClaseHijo2)(i)).metodoClaseHijo2()
+	}
+}
+
+
+StringBuilder -> Generate > toString() > Template > StringBuilder
+
+SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+try {
+Date d = sdf.parse("01/01/2000");
+}
+catch((ParseException e) {
+	System.out.println(e.getStackTrace());
+}
+
+ArrayList -> Fuck off!
