@@ -1,9 +1,9 @@
-package ev2.boletin2.pez;
+package ev2.boletin2.ej6pez;
 
 public class Main {
 
     public static void main(String[] args) {
-        Shark sh1 = new Shark("Orl",44);
+        Shark sh1 = new Shark("Orl", 44);
         System.out.println(Fish.getFishNumber());
         System.out.println(sh1.getName());
         System.out.println(sh1.getTeeth());
