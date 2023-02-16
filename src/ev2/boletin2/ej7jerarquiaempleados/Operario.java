@@ -1,4 +1,4 @@
-package ev2.boletin2.empleado;
+package ev2.boletin2.ej7jerarquiaempleados;
 
 import java.util.Date;
 

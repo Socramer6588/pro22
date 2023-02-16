@@ -1,4 +1,4 @@
-package ev2.boletin2.empleado;
+package ev2.boletin2.ej7jerarquiaempleados;
 
 import java.util.Date;
 
@@ -21,6 +21,6 @@ public class Tecnico extends Operario {
 
     @Override
     public String toString() {
-        return super.toString()+ " Sección: "+ seccion;
+        return super.toString() + " Sección: " + seccion;
     }
 }
