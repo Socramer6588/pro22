@@ -64,7 +64,7 @@ public class Main {
 
     public static boolean eliminarElemento(Set set, String cad) {
         boolean res = set.remove(cad);
-        mostrarElementos(set);
+//        mostrarElementos(set);
         return res;
     }
 
@@ -92,7 +92,7 @@ public class Main {
         insercionComun(hsPos);
         t_fin = System.currentTimeMillis(); // CAPTURO INSTANTE FINAL
         t_total = t_fin - t_comienzo; // RESTO TIEMPO Y OBTENGO MS TOTALES
-        mostrarElementos(hsPos);
+//        mostrarElementos(hsPos);
         System.out.println("TIEMPO HASHSET: " + t_total);
 
         // INSERCIONES LINKEDHASHSET
@@ -100,7 +100,7 @@ public class Main {
         insercionComun(lhsPos);
         t_fin = System.currentTimeMillis(); // CAPTURO INSTANTE FINAL
         t_total = t_fin - t_comienzo; // RESTO TIEMPO Y OBTENGO MS TOTALES
-        mostrarElementos(lhsPos);
+//        mostrarElementos(lhsPos);
         System.out.println("TIEMPO LINKEDHASHSET: " + t_total);
 
         // INSERCIONES TREESET
@@ -108,7 +108,7 @@ public class Main {
         insercionComun(tPos);
         t_fin = System.currentTimeMillis(); // CAPTURO INSTANTE FINAL
         t_total = t_fin - t_comienzo; // RESTO TIEMPO Y OBTENGO MS TOTALES
-        mostrarElementos(tPos);
+//        mostrarElementos(tPos);
         System.out.println("TIEMPO TREESET: " + t_total);
     }
 
