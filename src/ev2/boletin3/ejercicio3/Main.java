@@ -6,11 +6,10 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Main {
-    ArrayList<Integer> listaEnteros;
+    ArrayList<Integer> listaEnteros = new ArrayList();
 
     public static void main(String[] args) {
         Main proyectoReales = new Main();
-        proyectoReales.listaEnteros = new ArrayList();
         proyectoReales.leerOpcion();
     }
 

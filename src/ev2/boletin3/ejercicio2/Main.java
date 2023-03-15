@@ -1,13 +1,16 @@
 package ev2.boletin3.ejercicio2;
 
-import java.util.*;
+import java.util.Iterator;
+import java.util.Set;
+import java.util.SortedSet;
+import java.util.TreeSet;
 
 /**
  * Crear dos conjuntos ordenados de String y realiza lo siguiente:
  * * Realiza inserciones, borrados y obtención de un subconjunto.
  * * Crea un nuevo conjunto que contenga la unión de los 2 conjuntos iniciales.
  * * Crea otro conjunto que contenga la diferencia de los 2 conjuntos iniciales (eliminar los elementos de c2 en c1).
- * */
+ */
 
 public class Main {
 
@@ -17,7 +20,7 @@ public class Main {
     private static void rellenarConjuntos() {
         for (int i = 0; i < 10; i++) {
             ts1.add("Cadena " + i);
-            ts2.add("Cadena " + (i+5));
+            ts2.add("Cadena " + (i + 5));
         }
     }
 
