@@ -1,0 +1,7 @@
+Crear un programa que use ArrayList de números enteros.
+El programa debe mostrar un menú donde se pueda
+agregar un número, -> add
+buscar un número, -> indexOf
+modificar un número -> set
+eliminar un número -> remove
+e insertar la posición dada -> add pasando posición

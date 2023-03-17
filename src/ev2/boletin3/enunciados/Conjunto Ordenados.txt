@@ -1,0 +1,7 @@
+Crea dps conjuntos ordenados de elemntos Integer y realiza
+lo siguiente:
+La suma, resta, multipicación de sus elementos.
+Crea un nuevo conjunto que contenga la unión de los 2
+conjuntos iniciale3s.
+Crea otro conjunto que contenga  la diferencia de los 2
+conjuntos iniciales (eliminar los elementos de c2 en c1)

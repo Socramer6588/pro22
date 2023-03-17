@@ -1,0 +1,6 @@
+Implementa un método que cree un array de cadenas de texto. A contnuación,
+implementa un método que cargue el array con nombres. Deberá existir otro
+método que visualice el contenido del array, con el índice de cada posición.
+Implementar un método que busque un nombre en el array y devuelva su 
+posición. Por último, desarrollar un método para eliminar un nombre de 
+la lista.

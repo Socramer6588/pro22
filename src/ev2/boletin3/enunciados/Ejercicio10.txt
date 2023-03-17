@@ -1,0 +1,6 @@
+Almacena en un HashMap los códigos postales de las provincias de Galicia.
+a). Muestra por pantalla los datos introducidos
+b). Pide un código postal y muestra la provincia asociada sino
+avisa al usuario
+c). Elimina las provincias dew Lugo y Pontevedra
+d). Muestra por pantalla los datos

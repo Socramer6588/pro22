@@ -1,0 +1,17 @@
+Modifica el ejercicio de Bebidas para incorporar una clase 
+Almacén en la que se lleve un registro de todos los 
+productos comercializados. Para dicho registro, la clase 
+deberá contener una estructura donde las claves de los 
+productos serán números enteros, y el valor será el producto 
+comercializado.
+
+Se establecerá un tamaño máximo de Almacén por defecto a 20. 
+No obstante, dicho valor podrá recibirse por constructor y 
+asignarse de forma interna al atributo.
+
+Además, se implementarán métodos que permitan agregar un 
+producto al registro, verificar que exista un producto 
+dentro del almacén (comprobando por identificador), listar 
+productos y eliminar un producto.
+
+Por último, en la clase ejecutable, se cambiará el array estático por uno dinámico.

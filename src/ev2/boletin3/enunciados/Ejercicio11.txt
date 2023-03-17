@@ -1,0 +1,8 @@
+Programa que almacene y gestione los Nº expediente y alumnos
+de la clase.
+Utiliza un HasMap para alamacenar los datos de tus
+compañeros de clase.
+a. Indica cuantos alumnos hay
+b. Pide un Nº expediente, sí existe muestra el nombre del
+alumno, sino indica el error
+c. Permite elimnar un alumno de nuestra lista

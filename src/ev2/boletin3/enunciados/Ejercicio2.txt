@@ -1,0 +1,8 @@
+Crear dos conjuntos ordenados de String y realiza lo
+siguiente:
+* Realiza inserciones, borrados y obtnción un
+subconjunto .
+* Crea un nuevo conjunto que contenga la unión de los 2
+conjuntos iniciales .
+* Crea otro conjunto que contenga la difrencia de los 2
+conjuntos iniciales (eliminar los elementos c2 en c1).
