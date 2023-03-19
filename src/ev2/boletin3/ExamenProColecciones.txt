@@ -1,0 +1,93 @@
+
+Set -> No admite duplicados
+HashSet -> Orden interno aleatorio
+LinkedHashSet -> Orden según inserción
+TreeSet -> Orden ascendente & NOT NULL
+
+HashSet<String> hsPos = new HashSet<>();
+LinkedHashSet<String> lhsPos = new LinkedHashSet<>();
+TreeSet<String> tPos = new TreeSet<>();
+
+    public static void llenarConjunto(Set set) {
+        for (int i = 0; i <= 10; i++) {
+			set.add("Cadena " + (i + 5));
+        }
+    }
+
+	public static boolean comprobarElementoExiste(Set set, String cad) {
+        return set.contains(cad);
+    }
+
+    public static boolean eliminarElemento(Set set, String cad) {
+        return set.remove(cad);
+    }
+
+    public static void mostrarElementos(Set set) {
+        Iterator<String> it = set.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
+        }
+		
+		for (Object s1 : set) {
+            System.out.println(s1);
+        }
+    }
+	
+	public static SortedSet<String> obtenerSubconjunto(TreeSet set, String cad) {
+        SortedSet<String> res = set.headSet(cad);// set.subSet("Cadena 7", "Cadena 11");
+        return res;
+    }
+	
+	public static TreeSet<String> unionConjuntos() {
+        TreeSet<String> union = (TreeSet<String>) ts1.clone();
+        union.addAll(ts2);
+        return union;
+    }
+
+    public static TreeSet<String> diferenciaConjuntos() {
+        TreeSet<String> diferencia = (TreeSet<String>) ts2.clone();
+        diferencia.removeAll(ts1);
+        return diferencia;
+    }
+	
+List -> Admite duplicados & Acceso según posición
+ArrayList -> Array dinámico
+LinkedList -> Almacenamiento separado, referencias hermanos
+	
+ArrayList<Integer> listaEnteros = new ArrayList();
+
+indice = listaEnteros.indexOf(valor);
+listaEnteros.set(indice, nuevoValor);
+listaEnteros.remove(indice);
+listaEnteros.add(valor);
+listaEnteros.add(indice, valor);
+listaEnteros.size()
+listaEnteros.get(i);
+listaEnteros.isEmpty()
+
+while(-1 != listaEnteros.indexOf(5)) {
+	listaEnteros.remove(listaEnteros.indexOf(5))
+}
+
+    public void mostrarLista() {
+        if (!listaEnteros.isEmpty()) {
+            System.out.println("Elementos de la lista:");
+            for (int i = 0; i < listaEnteros.size(); i++) {
+                System.out.println(listaEnteros.get(i));
+            }
+        } else {
+            System.out.println("No existen valores en la lista");
+        }
+    }
+	
+	public void ordenarAscendente() {
+        Collections.sort(listaEnteros);
+        mostrarLista();
+    }
+
+    public void ordenarDescendente() {
+        Comparator<Integer> comparador = Collections.reverseOrder();
+        Collections.sort(listaEnteros, comparador);
+        mostrarLista();
+    }
+	
